@@ -492,3 +492,14 @@ textarea::placeholder {
 .max-content {
   max-width: 820px;
 }
+
+/* ═══ Experience Card Grid Responsive ═══ */
+@media(max-width:768px) {
+  .exp-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .ach-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
