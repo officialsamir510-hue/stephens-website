@@ -8,6 +8,7 @@ import MarqueeSection from "./components/MarqueeSection";
 const AboutSection = lazy(() => import("./components/AboutSection"));
 const WorkSection = lazy(() => import("./components/WorkSection"));
 const ServicesSection = lazy(() => import("./components/ServicesSection"));
+const BlogSection = lazy(() => import("./components/BlogSection"));
 const ContactSection = lazy(() => import("./components/ContactSection"));
 
 function SectionLoader() {
@@ -20,8 +21,7 @@ function SectionLoader() {
       background: "var(--bg)",
     }}>
       <div style={{
-        width: "36px",
-        height: "36px",
+        width: "36px", height: "36px",
         border: "2px solid var(--border)",
         borderTopColor: "var(--primary)",
         borderRadius: "50%",
@@ -44,6 +44,7 @@ export function App() {
           <AboutSection />
           <WorkSection />
           <ServicesSection />
+          <BlogSection />
           <ContactSection />
         </Suspense>
       </main>
