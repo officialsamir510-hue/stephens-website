@@ -89,11 +89,6 @@ export default function HeroSection() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const stats = [
-    { end: 23, prefix: "$", suffix: "B+", label: "Assets managed", delay: 0 },
-    { end: 35, suffix: "+", prefix: "", label: "Years experience", delay: 0.1 },
-    { end: 70, suffix: "+", prefix: "", label: "Clients advised", delay: 0.2 },
-  ];
 
   return (
     <section ref={heroRef} id="home" style={{
@@ -109,12 +104,12 @@ export default function HeroSection() {
       background: "var(--bg)",
     }}>
       {/* 3D Particles */}
-      <FloatingParticles count={40} color="44,62,85" />
+      <FloatingParticles count={40} color="75,30,120" />
 
       {/* Dot grid */}
       <div style={{
         position: "absolute", inset: 0, zIndex: 0, pointerEvents: "none",
-        backgroundImage: "radial-gradient(circle, rgba(44,62,85,0.07) 1px, transparent 1px)",
+        backgroundImage: "radial-gradient(circle, rgba(75,30,120,0.07) 1px, transparent 1px)",
         backgroundSize: "40px 40px",
         maskImage: "radial-gradient(ellipse at 30% 50%, black 15%, transparent 65%)",
         WebkitMaskImage: "radial-gradient(ellipse at 30% 50%, black 15%, transparent 65%)",

@@ -8,7 +8,7 @@ function throttle<T extends (...args: any[]) => void>(func: T, delay: number): T
   }) as T;
 }
 
-export function FloatingParticles({ count = 40, color = "44,62,85" }: { count?: number; color?: string }) {
+export function FloatingParticles({ count = 40, color = "75,30,120" }: { count?: number; color?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = canvasRef.current; if (!canvas) return;
@@ -75,7 +75,7 @@ export function WireframeSphere({ size = 280 }: { size?: number }) {
           const x2 = x * Math.cos(rotY) + z1 * Math.sin(rotY);
           pts.push(project(x2, y1, -x * Math.sin(rotY) + z1 * Math.cos(rotY)));
         }
-        for (let j = 0; j < pts.length - 1; j++) { ctx.beginPath(); ctx.moveTo(pts[j].x, pts[j].y); ctx.lineTo(pts[j + 1].x, pts[j + 1].y); ctx.strokeStyle = `rgba(44,62,85,${pts[j].alpha * 0.12})`; ctx.lineWidth = 0.6; ctx.stroke(); }
+        for (let j = 0; j < pts.length - 1; j++) { ctx.beginPath(); ctx.moveTo(pts[j].x, pts[j].y); ctx.lineTo(pts[j + 1].x, pts[j + 1].y); ctx.strokeStyle = `rgba(75,30,120,${pts[j].alpha * 0.12})`; ctx.lineWidth = 0.6; ctx.stroke(); }
       }
       for (let i = 0; i < 16; i++) {
         const th = (i / 16) * Math.PI * 2; const pts: any[] = [];
@@ -86,7 +86,7 @@ export function WireframeSphere({ size = 280 }: { size?: number }) {
           const x2 = x * Math.cos(rotY) + z1 * Math.sin(rotY);
           pts.push(project(x2, y1, -x * Math.sin(rotY) + z1 * Math.cos(rotY)));
         }
-        for (let j = 0; j < pts.length - 1; j++) { ctx.beginPath(); ctx.moveTo(pts[j].x, pts[j].y); ctx.lineTo(pts[j + 1].x, pts[j + 1].y); ctx.strokeStyle = `rgba(44,62,85,${pts[j].alpha * 0.08})`; ctx.lineWidth = 0.5; ctx.stroke(); }
+        for (let j = 0; j < pts.length - 1; j++) { ctx.beginPath(); ctx.moveTo(pts[j].x, pts[j].y); ctx.lineTo(pts[j + 1].x, pts[j + 1].y); ctx.strokeStyle = `rgba(75,30,120,${pts[j].alpha * 0.08})`; ctx.lineWidth = 0.5; ctx.stroke(); }
       }
       animId = requestAnimationFrame(animate);
     };
@@ -96,7 +96,7 @@ export function WireframeSphere({ size = 280 }: { size?: number }) {
   return <canvas ref={canvasRef} style={{ width: size, height: size, pointerEvents: "none" }} />;
 }
 
-export function Cube3D({ size = 60, color = "#2C3E55", speed = 1 }: { size?: number; color?: string; speed?: number }) {
+export function Cube3D({ size = 60, color = "#4b1e78", speed = 1 }: { size?: number; color?: string; speed?: number }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = canvasRef.current; if (!canvas) return;
@@ -133,7 +133,7 @@ export function use3DTilt(intensity = 15) {
   return ref;
 }
 
-export function Ring3D({ size = 200, color = "44,62,85" }: { size?: number; color?: string }) {
+export function Ring3D({ size = 200, color = "75,30,120" }: { size?: number; color?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = canvasRef.current; if (!canvas) return;

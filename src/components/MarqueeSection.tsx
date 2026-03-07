@@ -50,7 +50,7 @@ export default function MarqueeSection() {
                 letterSpacing: ".06em",
                 textTransform: "uppercase",
                 flexShrink: 0,
-                color: t === "—" ? "var(--secondary)" : "rgba(108,117,129,0.5)",
+                color: t === "—" ? "var(--secondary)" : "rgba(108,101,129,0.5)",
               }}>{t}</span>
             ))}
           </div>

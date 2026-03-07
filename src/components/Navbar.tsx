@@ -29,7 +29,7 @@ export default function Navbar() {
       <div style={{
         position: "fixed", top: 0, left: 0, height: "2px",
         width: `${progress}%`,
-        background: "var(--primary)",
+        background: "var(--grad-primary)",
         zIndex: 10001,
         transition: "width .08s linear",
       }} />
@@ -40,7 +40,7 @@ export default function Navbar() {
         padding: "0 clamp(24px,5vw,80px)",
         display: "flex", alignItems: "center", justifyContent: "space-between",
         transition: "all .4s ease",
-        background: scrolled ? "rgba(245,247,250,0.95)" : "transparent",
+        background: scrolled ? "rgba(248,245,252,0.95)" : "transparent",
         backdropFilter: scrolled ? "blur(20px)" : "none",
         borderBottom: scrolled ? "1px solid var(--border)" : "1px solid transparent",
         boxShadow: scrolled ? "var(--shadow-sm)" : "none",
@@ -108,7 +108,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div style={{
         position: "fixed", inset: 0, zIndex: 999,
-        background: "rgba(245,247,250,0.98)",
+        background: "rgba(248,245,252,0.98)",
         backdropFilter: "blur(30px)",
         display: "flex", flexDirection: "column",
         alignItems: "center", justifyContent: "center",

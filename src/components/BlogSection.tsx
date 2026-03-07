@@ -87,12 +87,12 @@ const blogPosts = [
 
 // Category colors
 const categoryColors: Record<string, string> = {
-    "Digital Banking": "#2C3E55",
-    "Blockchain": "#4F6D8A",
-    "M&A": "#2C3E55",
-    "Technology": "#4F6D8A",
-    "Governance": "#2C3E55",
-    "Turnaround": "#4F6D8A",
+    "Digital Banking": "#4b1e78",
+    "Blockchain": "#55288d",
+    "M&A": "#512383",
+    "Technology": "#5a2d8a",
+    "Governance": "#4b1e78",
+    "Turnaround": "#512383",
 };
 
 export default function BlogSection() {
@@ -353,7 +353,7 @@ function FeaturedBlogCard({ post, isVisible, isHovered, onHover }: {
                     {/* Overlay */}
                     <div style={{
                         position: "absolute", inset: 0,
-                        background: "linear-gradient(135deg, rgba(44,62,85,0.08) 0%, transparent 100%)",
+                        background: "linear-gradient(135deg, rgba(75,30,120,0.08) 0%, transparent 100%)",
                         pointerEvents: "none",
                     }} />
 
@@ -365,7 +365,7 @@ function FeaturedBlogCard({ post, isVisible, isHovered, onHover }: {
                         fontSize: "11px", fontWeight: 700,
                         letterSpacing: ".1em", textTransform: "uppercase",
                         padding: "6px 14px", borderRadius: "6px",
-                        boxShadow: "0 2px 12px rgba(44,62,85,0.3)",
+                        boxShadow: "0 2px 12px rgba(75,30,120,0.3)",
                     }}>
                         Featured
                     </div>
@@ -648,12 +648,12 @@ function BlogCard({ post, index, isVisible, isHovered, onHover }: {
 // ═══════════════════════════════════════════════════════════
 function BlogImagePlaceholder({ category }: { category: string }) {
     const gradients: Record<string, string> = {
-        "Digital Banking": "linear-gradient(135deg, #2C3E55 0%, #4F6D8A 100%)",
-        "Blockchain": "linear-gradient(135deg, #4F6D8A 0%, #6B8CAE 100%)",
-        "M&A": "linear-gradient(135deg, #2C3E55 0%, #3A5068 100%)",
-        "Technology": "linear-gradient(135deg, #3A5068 0%, #4F6D8A 100%)",
-        "Governance": "linear-gradient(135deg, #1e2d3d 0%, #2C3E55 100%)",
-        "Turnaround": "linear-gradient(135deg, #2C3E55 0%, #1e2d3d 100%)",
+        "Digital Banking": "linear-gradient(135deg, #4b1e78 0%, #55288d 100%)",
+        "Blockchain": "linear-gradient(135deg, #512383 0%, #5a2d8a 100%)",
+        "M&A": "linear-gradient(135deg, #4b1e78 0%, #512383 100%)",
+        "Technology": "linear-gradient(135deg, #55288d 0%, #5a2d8a 100%)",
+        "Governance": "linear-gradient(135deg, #4b1e78 0%, #55288d 100%)",
+        "Turnaround": "linear-gradient(135deg, #512383 0%, #4b1e78 100%)",
     };
 
     const icons: Record<string, string> = {
